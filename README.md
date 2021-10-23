@@ -31,6 +31,7 @@ admin
 On the code side, `/admin/index`, is a basic HTML starter page that loads the Netlify CMS JavaScript file. The second file, `/admin/config.yml`, is the heart of your Netlify CMS installation, and a bit more complex. 
 
 ## Index
+
 `/admin/index.html`
 
 The first file, admin/index.html, is the entry point for the Netlify CMS admin interface. This means that users navigate to yoursite.com/admin/ to access it. 
@@ -55,10 +56,13 @@ In this example, we pull the admin/index.html file from a public CDN:
 In the code above the script is loaded from the unpkg CDN. Should there be any issue, jsDelivr can be used as an alternative source. Simply set the src to https://cdn.jsdelivr.net/npm/netlify-cms@^2.0.0/dist/netlify-cms.js
 
 ## Configuration
+
 `/admin/config`
 
 Configuration is different for every site, so we'll break it down into parts. Add all the code snippets in this section to your admin/config.yml file.
+
 ### Backend
+
 We're using Netlify for our hosting and authentication in this tutorial, so backend configuration is fairly straightforward.
 
 For GitHub and GitLab repositories, you can start your Netlify CMS config.yml file with these lines:
@@ -66,7 +70,7 @@ For GitHub and GitLab repositories, you can start your Netlify CMS config.yml fi
 ```yml
 backend:
   name: git-gateway
-  branch: main # Branch to update (optional; defaults to master)
+  branch: main # Branch to update (optional; defaults to main)
 ```
 
 **Editorial Workflow**  
@@ -74,7 +78,7 @@ Note: Editorial workflow works with GitHub repositories, and support for GitLab 
 
 By default, saving a post in the CMS interface pushes a commit directly to the publication branch specified in backend. However, you also have the option to enable the Editorial Workflow, which adds an interface for drafting, reviewing, and approving posts. To do this, add the following line to your Netlify CMS config.yml:
 
-*This line should *not* be indented*  
+*This line should NOT be indented*
 
 ```yml
 publish_mode: editorial_workflow  
@@ -83,7 +87,7 @@ publish_mode: editorial_workflow
 ### Media and Public Folders
 Netlify CMS allows users to upload images directly within the editor. For this to work, the CMS needs to know where to save them. If you already have an images folder in your project, you could use its path, possibly creating an uploads sub-folder, for example:
 
-*This line should *not* be indented*  
+*This line should NOT be indented*  
 
 ```yml
 media_folder: "images/uploads" # Media files will be stored in the repo under images/uploads
@@ -93,7 +97,7 @@ If you're creating a new folder for uploaded media, you'll need to know where yo
 
 Note that the media_folder file path is relative to the project root, so the example above would work for Jekyll, GitBook, or any other generator that stores static files at the project root. However, it would not work for Hugo, Hexo, Middleman or others that store static files in a subfolder. Here's an example that could work for a Hugo site:
 
-*This line should *not* be indented*  
+*This line should NOT be indented*  
 
 ```yml
 media_folder: "static/images/uploads" # Media files will be stored in the repo under static/images/uploads
@@ -106,27 +110,28 @@ If public_folder is not set, Netlify CMS defaults to the same value as media_fol
 
 ### Collections
 
-Collections define the structure for the different content types on your static site. Since every site is different, the collections settings differ greatly from one site to the next. Let's say your site has a blog, with the posts stored in `_posts/blog` (such as the case for `Jekyll`), and files saved in a date-title format, like 1999-12-31-lets-party.md. 
+Collections define the structure for the different content types on your static site. Since every site is different, the collections settings differ greatly from one site to the next. Let's say your site has a blog, with the posts stored in `_posts/blog` (such as the case for `Jekyll`), and files saved in a date-title format, like 1999-12-31-lets-party.md.  
 
 So:  
 -where the content is stored determines your collections:folder value  
 -how you name your content files determines your collections:slug
 
-Now you need to update the config.yml file. I use Github and my deploy branch is master (https://www.kevinsahin.com/blog/adding-netlify-cms-to-an-existing-hugo-website/):
+Now you need to update the config.yml file. I use Github and my deploy branch is main:  
+(see <https://www.kevinsahin.com/blog/adding-netlify-cms-to-an-existing-hugo-website/>):
 
-```
+```yml
 backend:
   name: git-gateway
-  branch: master # Branch to update (optional; defaults to master)
+  branch: main # Branch to update (optional; defaults to main)
 ```
 
-*This line should *not* be indented*  
+*This line should NOT be indented*  
 
 ```yml
 publish_mode: editorial_workflow
 ```
 
-*This line should *not* be indented*  
+*This line should NOT be indented*  
 
 ```yml
 media_folder: "static/images/uploads" # Media files will be stored in the repo under static/images/uploads
