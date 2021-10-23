@@ -45,6 +45,8 @@ In this example, we pull the admin/index.html file from a public CDN:
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Content Manager</title>
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
 </head>
 <body>
   <!-- Include the script that builds the page and powers Netlify CMS -->
@@ -57,7 +59,7 @@ In the code above the script is loaded from the unpkg CDN. Should there be any i
 
 ## Configuration
 
-`/admin/config`
+`/admin/config.yml`
 
 Configuration is different for every site, so we'll break it down into parts. Add all the code snippets in this section to your admin/config.yml file.
 
@@ -124,17 +126,17 @@ backend:
   name: git-gateway
   branch: main # Branch to update (optional; defaults to main)
 
-# This line should NOT be indented
+# This line should *not* be indented
 publish_mode: editorial_workflow
 
-# These line should NOT be indented
+# These lines should *not* be indented
 media_folder: "static/images/uploads" # Media files will be stored in the repo under static/images/uploads
 public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
 
 collections:
   - name: "blog"
     label: "Blog"
-    folder: "content/blog"
+    folder: "content/posts"
     create: true
     fields:
       - { label: "Title", name: "title", widget: "string" }
