@@ -150,3 +150,12 @@ The collections part is the most important one that you will need to adapt.
 
 Collections represent how our content is structured. Generally you have one or several fields in your Front-matter, in my case title, date, image and description.
 Be careful about the folder value, in my case it's `content/blog` because my hugo theme works this way, but the default value for Hugo is `content/posts`.
+
+## Netlify CMS Setup
+
+Log into your Netlify account and click on the **Settings** button and then:
+
+1. Identity > Enable Identity service  
+2. Registration preferences -> Invite only
+3. Services > Git Gateway, and click Enable Git Gateway
+4. Go to YourSiteURL/admin and invite yourself to the admin area.
