@@ -2,6 +2,12 @@
 
 from <https://www.netlifycms.org/docs/add-to-your-site/>
 
+This Hugo app uses the Ava theme at <https://themes.gohugo.io/themes/hugo-theme-ava/>.
+
+```bash
+git clone https://github.com/jmau111/hugo-theme-ava.git themes/hugo-theme-ava
+```
+
 ## App File Structure
 
 A static admin folder contains all Netlify CMS files, stored at the root of your published site. 
