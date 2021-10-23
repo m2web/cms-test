@@ -159,3 +159,5 @@ Log into your Netlify account and click on the **Settings** button and then:
 2. Registration preferences -> Invite only
 3. Services > Git Gateway, and click Enable Git Gateway
 4. Go to YourSiteURL/admin and invite yourself to the admin area.
+
+The site: <https://m2-cms-test.netlify.app/>
