@@ -123,17 +123,11 @@ Now you need to update the config.yml file. I use Github and my deploy branch is
 backend:
   name: git-gateway
   branch: main # Branch to update (optional; defaults to main)
-```
 
-*This line should NOT be indented*  
-
-```yml
+# This line should NOT be indented
 publish_mode: editorial_workflow
-```
 
-*This line should NOT be indented*  
-
-```yml
+# These line should NOT be indented
 media_folder: "static/images/uploads" # Media files will be stored in the repo under static/images/uploads
 public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
 
