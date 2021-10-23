@@ -1,4 +1,4 @@
-baseURL = "https://hugo-theme-ava.netlify.app/"
+baseURL = "https://m2-cms-test.netlify.app/"
 languageCode = "en"
 title = "Mark's Netlify CMS Test"
 theme = "hugo-theme-ava"
