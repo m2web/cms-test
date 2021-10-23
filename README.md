@@ -1,22 +1,24 @@
-# Netlify CMS 
+# Netlify CMS  
 
 from <https://www.netlifycms.org/docs/add-to-your-site/>
 
-This Hugo app uses the Ava theme at <https://themes.gohugo.io/themes/hugo-theme-ava/>.
+This Hugo site uses the Ava theme at <https://themes.gohugo.io/themes/hugo-theme-ava/>.
 
 ```bash
-git clone https://github.com/jmau111/hugo-theme-ava.git themes/hugo-theme-ava
+git submodule add https://github.com/jmau111/hugo-theme-ava.git themes/hugo-theme-ava
+git submodule init
+git submodule update
+cp -a themes/hugo-theme-ava/exampleSite/. .
 ```
 
 ## App File Structure
 
-A static admin folder contains all Netlify CMS files, stored at the root of your published site. 
+A static admin folder contains all Netlify CMS files, stored at the root of your published site.  
 
-
-|These generators							              |store static files in    |
+|These generators |store static files in    |
 |-------------------------------------------|-------------------------|
-|Jekyll, GitBook								            |/ (project root)         |
-|Hugo, Gatsby, Nuxt, Gridsome, Zola, Sapper	|/static                  |
+|Jekyll, GitBook |/ (project root)         |
+|Hugo, Gatsby, Nuxt, Gridsome, Zola, Sapper|/static                  |
 
 Inside the admin folder, you'll create two files:
 
