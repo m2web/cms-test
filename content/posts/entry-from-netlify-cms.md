@@ -11,5 +11,3 @@ All formatting via the *WYSIWYG* form.
 * Here is one item
 * 2nd item
 * And 3rd item
-
-Here is an uploaded image:
