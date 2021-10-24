@@ -15,10 +15,10 @@ cp -a themes/hugo-theme-ava/exampleSite/. .
 
 A static admin folder contains all Netlify CMS files, stored at the root of your published site.  
 
-|These generators |store static files in    |
-|-------------------------------------------|-------------------------|
-|Jekyll, GitBook |/ (project root)         |
-|Hugo, Gatsby, Nuxt, Gridsome, Zola, Sapper|/static                  |
+|These generators |store static files in|
+|---|---|
+|Jekyll, GitBook |/ (project root) |
+|Hugo, Gatsby, Nuxt, Gridsome, Zola, Sapper|/static |
 
 Inside the admin folder, you'll create two files:
 
