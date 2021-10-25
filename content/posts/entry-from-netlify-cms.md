@@ -1,7 +1,7 @@
 ---
 title: Entry from Netlify CMS
 date: 2021-10-23T17:22:51.713Z
-image: /images/uploads/m2web.png
+image: /images/uploads/dune.jpg
 description: First post from the Netlify CMS
 ---
 This is my initial post from the **Netlify CMS**.
