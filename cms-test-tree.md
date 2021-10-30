@@ -25,7 +25,6 @@ This tree command output below after this repo was created by a cloning the remo
 │           └── dune.jpg
 ├── themes
 │   └── hugo-theme-ava
-└── tree.txt
 ```
 
 Then, after running git submodule update --init, the tree command output below:
@@ -145,7 +144,6 @@ Then, after running git submodule update --init, the tree command output below:
 │       │       ├── menu.svg
 │       │       └── twitter.svg
 │       └── theme.toml
-└── tree-after-submodule-init-update.txt
 ```
 
 Let's focus on the theme/hugo-theme-ava/layouts folder:
@@ -177,5 +175,4 @@ Let's focus on the theme/hugo-theme-ava/layouts folder:
 ├── section
 ├── shortcodes
 │   └── contact-form.html
-└── theme-layouts.txt
 ```
